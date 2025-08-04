@@ -22,6 +22,8 @@ A mini LinkedIn-like full-stack social platform where users can register, log in
 
 ---
 
+
+```
 ##  Folder Structure
 mini-linkedin/
 │
@@ -42,7 +44,7 @@ mini-linkedin/
 │ └── vite.config.js
 │
 └── README.md
-
+```
 ---
 
 ##  Getting Started
