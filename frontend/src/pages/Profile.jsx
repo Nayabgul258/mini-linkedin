@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import API from "../api.js";
 import PostCard from "../components/PostCard";
-import Post from "../../../backend/models/Post.js";
+
 
 export default function Profile() {
   const { id } = useParams();
