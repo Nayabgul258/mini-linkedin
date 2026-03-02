@@ -11,9 +11,9 @@ export default function Profile() {
 
   useEffect(() => {
     (async () => {
-      const res = await API.get(`/auth/profile/${id}`);
+      const res = await API.get(`/api/auth/profile/${id}`);
       setUser(res.data);
-      const postRes = await API.get(`/posts/user/${id}`);
+      const postRes = await API.get(`/api/posts/user/${id}`);
       setPosts(postRes.data);
     })();
   }, [id]);

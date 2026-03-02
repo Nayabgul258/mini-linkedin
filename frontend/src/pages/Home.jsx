@@ -7,14 +7,14 @@ export default function Home() {
   const [content, setContent] = useState("");
 
   const fetchPosts = async () => {
-    const res = await API.get("/posts");
+    const res = await API.get("/api/posts");
     console.log(res.data); 
     setPosts(res.data);
   };
 
   const handlePost = async (e) => {
     e.preventDefault();
-    await API.post("/posts", { content });
+    await API.post("/api/posts", { content });
     setContent("");
     fetchPosts();
   };

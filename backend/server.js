@@ -13,11 +13,11 @@ app.use(express.json());
 app.use("/api/auth",authRoute);
 app.use("/api/posts",portRoute);
 
-
+dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 
-dotenv.config();
+
 
 app.listen(PORT, () => {
   connectDb();
